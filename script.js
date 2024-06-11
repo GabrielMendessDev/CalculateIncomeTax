@@ -30,13 +30,13 @@ function updateCurrencyImage() {
     const currencyImage = document.getElementById('currency-image');
     switch(currency) {
         case 'real':
-            currencyImage.src = '/assets/real.svg';
+            currencyImage.src = '/assets/real.png';
             break;
         case 'dolar':
-            currencyImage.src = '/assets/dolar.svg';
+            currencyImage.src = '/assets/dolar.png';
             break;
         case 'euro':
-            currencyImage.src = '/assets/euro.svg';
+            currencyImage.src = '/assets/euro.png';
             break;
         default:
             currencyImage.src = '';
