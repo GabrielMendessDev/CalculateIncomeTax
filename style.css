@@ -1,0 +1,113 @@
+* {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    color: #ffffffa7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    max-height: 120vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #444;
+    box-shadow: -8px 4px 47px -4px rgba(7, 208, 7, 0.483);
+    border-radius: 10px;
+}
+
+.container h1 {
+    font-weight: 700;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #0f0;
+    outline: none;
+}
+
+#btnCalculateTax {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: -8px 4px 47px -4px rgba(7, 208, 7, 0.483);
+}
+
+#btnCalculateTax:hover {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+#currency-image {
+    max-width: 100px;
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    color: white;
+    padding-bottom: 70px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
