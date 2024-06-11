@@ -14,16 +14,16 @@
     <section class="container">
         <h1>Calculadora de Imposto</h1>
         <div class="form-group">
-            <label for="salary">Salário:</label>
+            <label for="salary">Salário(Mensal):</label>
             <input placeholder="Informe o salário aqui..." type="number" id="salary" name="salary" required>
         </div>
         <div class="form-group">
             <label for="currency">Moeda:</label>
             <select id="currency" name="currency" onchange="updateCurrencyImage()">
                 <option value="default">Selecione a moeda</option>
-                <option value="real">Real</option>
-                <option value="dolar">Dólar</option>
-                <option value="euro">Euro</option>
+                <option value="real">Real - BR(2024)</option>
+                <option value="dolar">Dólar - EUA(2023)</option>
+                <option value="euro">Euro - FR(2023)</option>
             </select>
         </div>
         <button id="btnCalculateTax" onclick="calculateTax()">Calcular Imposto</button>
