@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Calculadora de Imposto</title>
 </head>
 <body>
@@ -11,11 +15,12 @@
         <h1>Calculadora de Imposto</h1>
         <div class="form-group">
             <label for="salary">Salário:</label>
-            <input type="number" id="salary" name="salary" required>
+            <input placeholder="Informe o salário aqui..." type="number" id="salary" name="salary" required>
         </div>
         <div class="form-group">
             <label for="currency">Moeda:</label>
             <select id="currency" name="currency" onchange="updateCurrencyImage()">
+                <option value="default">Selecione a moeda</option>
                 <option value="real">Real</option>
                 <option value="dolar">Dólar</option>
                 <option value="euro">Euro</option>
@@ -24,7 +29,7 @@
         <button id="btnCalculateTax" onclick="calculateTax()">Calcular Imposto</button>
 
         <div id="result"></div>
-        <img id="currency-image" src="./assets/real.png" alt="Imagem da Moeda" />
+        <img id="currency-image" src="./assets/interrogation.png" alt="Imagem da Moeda" />
     </section>
     <footer>
         <p>

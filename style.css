@@ -1,5 +1,5 @@
 * {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,9 +12,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 120vh;
-    max-height: 120vh;
+    height: auto;
 }
+
+body::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+  }
+  
+  /* Estilizando o botão de rolagem */
+  body::-webkit-scrollbar-thumb {
+    background: rgba(7, 208, 7, 0.483); /* Cor do botão de rolagem */
+    border-radius: 5px;
+  }
 
 .container {
     display: flex;
@@ -35,16 +44,28 @@ body {
     padding-bottom: 20px;
 }
 
+.container h1:hover{
+    color: white;
+    transition: 0.4s;
+}
+
 .form-group {
     margin-bottom: 15px;
     padding: 10px;
     width: 100%;
+    cursor: pointer;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 5px;
     font-size: 18px;
+    cursor: pointer;
+}
+
+.form-group label:hover{
+    color: white;
+    transition: 0.4s;
 }
 
 .form-group input,
@@ -56,6 +77,11 @@ body {
     border-radius: 5px;
     background-color: #555;
     color: #fff;
+}
+
+.form-group select{
+    cursor: pointer;
+    
 }
 
 .form-group input:focus,
@@ -105,7 +131,7 @@ footer {
   }
   
   footer a {
-    color: white;
+    color: rgba(7, 208, 7, 0.483);
     text-decoration: none;
   }
   
